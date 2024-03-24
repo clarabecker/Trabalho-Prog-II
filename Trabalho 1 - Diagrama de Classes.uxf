@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>32</y>
+      <w>368</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Aeroporto
+--
+- nome : String
+- cidade : String
+- estado : String
+- pais : String
+--
++ Aeroporto (nome : String, cidade : String, estado: String, pais : String)
++ getNome() : String
++ setNome (nome : String) : boolean
++ getCidade() : String
++ setCidade (cidade : String) : boolean
++ getEstado() : String
++ setEstado (estado : String) : boolean
++ getPais(): String
++ setPais (pais : String) : boolean
++ imprimirA	eronaves() : void
++ imprimirAeronaves(companhia : String) : void 
++ toString() : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>592</x>
+      <y>32</y>
+      <w>400</w>
+      <h>232</h>
+    </coordinates>
+    <panel_attributes>Aeronave
+--
+- companhia : String
+- capacidade : int
+- modelo : String
+- codigo : int
+--
++ Aeronave (companhia : String, capacidade : int, modelo : String, codigo : int)
++ getCompanhia() : String
++ setCompanhia (companhia : String) : boolean
++ getCapacidade() : int
++ setCapacidade (capacidade : int) : boolean
++ getModelo() : String
++ setModelo (modelo : String) : boolean
++ getCodigo() : int
++ setCodigo (codigo : int) : boolean
++ imprimirQuantidadePessoas (voo : String) : void
++ imprimirPassageiros() : void
++ toString() : String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1152</x>
+      <y>32</y>
+      <w>400</w>
+      <h>272</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;abstract&gt;&gt;
+Pessoa
+--
+# nome : String
+# idade : int
+# cpf : String
+# voo : String
+# destino : String
+--
++ Pessoa (nome : String, idade : int, cpf : String, voo : String, destino : String)
++ getNome() : String
++ setNome (nome : String) : boolean
++ getIdade() : int
++ setIdade (idade : int) : boolean
++ getCpf() : String
++ setCpf (cpf : String) : boolean
++ getVoo() : String
++ setVoo (voo : String) : boolean
++ getDestino() : String
++ setDestino (destino : String) : booloean
+/+ cartaoDeEmbarque() : String/
++ toString() : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>928</x>
+      <y>384</y>
+      <w>352</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Passageiro 
+--
+- classe : String
+- poltrona : int
+--
++ Passageiro ( classe : String, poltrona : int)
++ getClasse() : String
++ setClasse (classe : String) : boolean
++ getPoltrona() : int
++ setPoltrona (poltrona : int) : boolean
++ cartaoDeEmbarque() : String 
++ toString() : String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1328</x>
+      <y>392</y>
+      <w>344</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>Piloto
+--
+- licenca : String
+--
++ Piloto (licenca : String)
++ getLicenca() : String
++ setLicenca (licenca : String) : boolean
++ calcularValorVoo(horasDeVoo : int, valorHora : double) : double
++ cartaoDeEmbarque() : String
++ toString() : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1088</x>
+      <y>296</y>
+      <w>184</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>210.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1440</x>
+      <y>296</y>
+      <w>72</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>80</y>
+      <w>248</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+possui &gt;
+m2=*</panel_attributes>
+    <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>984</x>
+      <y>80</y>
+      <w>184</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m2=1..*
+transporta &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+</diagram>
