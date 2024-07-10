@@ -1,3 +1,3 @@
 # Trabalho-Prog-II
 
-O programa feito para o trabalho da disciplina Programação II simula o controle de aeronaves, passageiros e pilotos de um aeroporto. O programa tem as seguintes classes: Aeroporto, Aeronave, Pessoa, Passageiro e Piloto. Além disso, apresenta como funcionalidades: imprimir informações sobre as aeronaves cadastradas no aeroporto, imprimir informações sobre as aeronaves de determinada companhia aérea, imprimir informações sobre os passageiros, imprimir a quantidade de pessoas presentes na aeronave, calcular o valor recebido pelo piloto durante o voo e imprimir o cartão de embarque, com informações dos passageiros ou do piloto.
+O programa feito para o trabalho da disciplina Programação II simula o controle de aeronaves, passageiros e pilotos de um aeroporto. O programa tem as seguintes classes: Aeroporto, Aeronave, Pessoa, Passageiro e Piloto. 
